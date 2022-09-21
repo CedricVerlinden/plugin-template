@@ -1,0 +1,29 @@
+main: ${main.class}
+name: ${project.name}
+version: ${project.version}
+
+description: A barebone minecraft plugin template.
+api-version: 1.13
+load: POSTWORLD
+author: ${author}
+
+website: github.com/CedricVerlinden
+depend: [ ]
+prefix: Template
+
+# COMMANDS AND PERMISSIONS REGISTRATION
+
+commands:
+  test:
+    description: A simple test command to see if everything is working properly.
+    aliases: [ testing, template ]
+    permission: template.command.test
+    permission-message: You do not have the required permissions to execute this command.
+    usage: "Usage: /<command> [message]"
+
+permissions:
+  template.command.all:
+    description: Allows you to execute all existing commands.
+    default: true
+    children:
+      template.command.test: true

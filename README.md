@@ -1,3 +1,7 @@
+```diff
+-This repository is currently no longer being maintained
+```
+
 # Minecraft Plugin Template
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com)
